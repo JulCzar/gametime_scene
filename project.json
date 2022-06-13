@@ -1,0 +1,58 @@
+{
+	"contentrating" : "Everyone",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"framerate" : 
+			{
+				"editable" : true,
+				"fraction" : true,
+				"index" : 0,
+				"max" : 240,
+				"min" : 12,
+				"order" : 100,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Framerate",
+				"type" : "slider",
+				"value" : 60
+			},
+			"particles" : 
+			{
+				"editable" : true,
+				"fraction" : true,
+				"index" : 1,
+				"max" : 10000,
+				"min" : 0,
+				"order" : 101,
+				"precision" : 1,
+				"step" : 1,
+				"text" : "Particles",
+				"type" : "slider",
+				"value" : 3000
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"wallpaper" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Wallpaper",
+				"type" : "file",
+				"value" : ""
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Technology" ],
+	"title" : "Game Time",
+	"type" : "web",
+	"version" : 0
+}
