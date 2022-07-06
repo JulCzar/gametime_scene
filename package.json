@@ -1,0 +1,14 @@
+{
+  "name": "gametime_ts",
+  "version": "1.0.0",
+  "author": "JulCzar",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2",
+    "typescript": "^4.7.4"
+  }
+}

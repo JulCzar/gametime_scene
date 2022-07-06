@@ -1,5 +1,4 @@
 {
-	"contentrating" : "Everyone",
 	"file" : "index.html",
 	"general" : 
 	{
@@ -8,7 +7,7 @@
 			"framerate" : 
 			{
 				"editable" : true,
-				"fraction" : true,
+				"fraction" : false,
 				"index" : 0,
 				"max" : 240,
 				"min" : 12,
@@ -22,10 +21,10 @@
 			"particles" : 
 			{
 				"editable" : true,
-				"fraction" : true,
+				"fraction" : false,
 				"index" : 1,
 				"max" : 10000,
-				"min" : 0,
+				"min" : 1000,
 				"order" : 101,
 				"precision" : 1,
 				"step" : 1,
@@ -33,26 +32,31 @@
 				"type" : "slider",
 				"value" : 3000
 			},
+			"physics" : 
+			{
+				"editable" : true,
+				"fraction" : true,
+				"index" : 0,
+				"max" : 240,
+				"min" : 12,
+				"order" : 100,
+				"precision" : 2,
+				"step" : 1,
+				"text" : "Physics Cycles per Second",
+				"type" : "slider",
+				"value" : 60
+			},
 			"schemecolor" : 
 			{
 				"order" : 0,
 				"text" : "ui_browse_properties_scheme_color",
 				"type" : "color",
 				"value" : "0 0 0"
-			},
-			"wallpaper" : 
-			{
-				"index" : 2,
-				"order" : 102,
-				"text" : "Wallpaper",
-				"type" : "file",
-				"value" : ""
 			}
 		}
 	},
 	"preview" : "preview.jpg",
-	"tags" : [ "Technology" ],
-	"title" : "Game Time",
+	"title" : "Gametime Scene",
 	"type" : "web",
 	"version" : 0
 }
