@@ -32,11 +32,13 @@ export class Engine<T = Record<string, unknown>> {
 
   start() {
     const self = this;
-    const frameTime = calculateFrameTime(self._physics.cyclesPerSecond);
 
-    this.intervalId = setInterval(async () => {
-      this.config.runFixed.call(undefined, this.state);
-    }, frameTime);
+    setTimeout(async function _self() {
+      self.config.runFixed.call(undefined, self.state);
+      const frameTime = calculateFrameTime(self._physics.cyclesPerSecond);
+
+      setTimeout(_self, frameTime);
+    }, calculateFrameTime(self._physics.cyclesPerSecond));
 
     setTimeout(async function _self() {
       self.config.runEveryFrame.call(undefined, self.state);
